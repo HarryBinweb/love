@@ -8,6 +8,7 @@
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>❤</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <style>
         body {
             -webkit-font-smoothing: antialiased;
@@ -42,12 +43,12 @@
 
 <body>
     <div class="content">
-        <h2>宝贝</h2>
-        <h2>我们在一起</h2>
-        <div class="timer">
+        <h2 class="animated slideInDown">Honey</h2>
+        <h2 class="animated slideInLeft">我们在一起</h2>
+        <div class="timer animated slideInRight">
             <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟 <b id="s"></b> 秒
         </div>
-        <h2>la～</h2>
+        <h2 class="animated slideInUp">la~</h2>
     </div>
 
 
@@ -56,7 +57,7 @@
             //获取起始日  注意:月是重0开始计数的
             var start = new Date(2018, 3, 11); 
             var t = new Date() - start;
-            // console.log(new Date(2018, 01, 01))  //测试打印日期
+            // console.log(new Date(2018, 08, 01))  //测试打印日期
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
