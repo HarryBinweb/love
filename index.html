@@ -53,10 +53,10 @@
 
     <script>
         function timer() {
-            //获取起始日
-            var start = new Date(2018, 04, 11); 
+            //获取起始日  注意:月是重0开始计数的
+            var start = new Date(2018, 3, 11); 
             var t = new Date() - start;
-            // console.log(new Date(2018, 08, 01))  //测试打印日期
+            // console.log(new Date(2018, 01, 01))  //测试打印日期
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
